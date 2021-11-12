@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --heading: #f8f8f8;
+  --body: #000;
+  --background: #f1f1f1;
+
+  --border: 1px solid #d1d1d1;
+
+  --shadow: 0 3px 1px -2px rgb(0 0 0 / 20%), 0 2px 2px 0 rgb(0 0 0 / 14%), 0 1px 5px 0 rgb(0 0 0 / 12%);
+
+  --primary: #061529;
+  --secondary: #40a9ff;
+  --disabled: #3c3c3c;
+  --accent: #82b1ff;
+  --error: #ff5252;
+  --info: #2196f3;
+  --success: #4caf50;
+  --warning: #ffc107;
+}
+
+body {
+  background: var(--background);
+  color: var(--body);
+}
+
+thead[class*="ant-table-thead"] th {
+  font-size: 0.85rem;
+  background-color: #fff;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+}
+
+.ant-table-title {
+  background-color: var(--heading);
+  border-bottom: var(--border);
+  padding: 0.4rem 0.5rem;
+}
+
+thead[class*="ant-table-thead"]
+  th:not(:last-child):not(.ant-table-selection-column):not(.ant-table-row-expand-icon-cell):not([colspan])::before {
+  display: none;
+}
+
+tbody[class*="ant-table-tbody"] td {
+  font-size: 0.85rem;
+  padding: 0.5rem 1rem;
+
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+  margin: 0;
+}
+
+@media (max-width: 1080px) {
+  html {
+    font-size: 93.75%;
+  }
+}
+
+@media (max-width: 720px) {
+  html {
+    font-size: 87.5%;
+  }
+}
